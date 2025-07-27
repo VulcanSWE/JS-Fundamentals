@@ -3,12 +3,13 @@
 const args = process.argv[2]; // ingnore the first two elements (node and script path)
 
 const number = parseInt(args);
+
 i = 0;
 
-if (isNaN(number) || number <= 0) {
+if (isNaN(number)) {
   console.log("Missing number of occurrences");
 } else {
-  while (i < number){
+    while (i < number){
     i++;
     console.log("C is fun");
   }
